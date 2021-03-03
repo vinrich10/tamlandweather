@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamland Weather</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href=“./style.css">
 </head>
 <body>
-    <h1>Tamland Weather</h1>
-    
+    <header>
+        <h1>Tamland Weather</h1>        
+    </header>
+    <main class="container">
+        <section id="search">
+            <form>
+                <h3>Search for a City:</h3>
+                <input id="city-search-field" />
+                <input id="country" value="US" />
+                <button class="btn btn-primary" id="submit">Submit</button>
+            </form>
 </body>
 </html>
+
