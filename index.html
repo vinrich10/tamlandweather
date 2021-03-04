@@ -1,56 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamland Weather</title>
-    <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet" type="text/css"/>
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tamland Weather</title>
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     </head>
-<body>
-    <header>
-        <h1>Tamland Weather Dashboard</h1>        
-    </header>
-    <main class="container">
-        <section id="search">
-            <form>
-                <h5>Search City or Zip</h5>
-                <input id="city-search-field" />
-                <input id="country" value="US" />
-                <button class="btn btn-primary" id="submit">Submit</button>
-            </form>
-            <div id="recent">
-                <p>Recent:</p>
-                <ul id="recent-searches"></ul>
-            </div>
-        </section>
-        <section id="current">
-        <div class="card">
-         <h3 class="card-title">Current<span class="name"></span></span></h5>
-            <figure id="weather-figure">
-                <img src=""/>
-            </figure>
-            <aside>
-                <p class="card-text">Temp: <span class="tempSpan"></span></p>
-                <!-- <p class="card-text">Min: <span id="minSpan"></span></p>
-                <p class="card-text">Max: <span id="maxSpan"></span></p> -->
-                <p class="card-text">Humidity: <span class="humidSpan"></span></p>
-                <p class="card-text">UV Index: <span class="uvSpan"></span></p>
-            </aside>
+    <body>
+        <header>
+            <img src="tamlandlogo.png" alt="Tamland" width="100" height="150">
+        </header>
+        <main class="container">
+            <section id="search">
+                <form>
+                    <h3>Search Zip Code</h3>
+                    <input id="city-search-field" placeholder="zip code"/>
+                    <button class="btn btn-primary" id="submit">Submit</button>
+                    <p id="err">Error: I Love Lamp</p>
+                </form>
+                <div id="recent">
+                    <p>Recent</p>
+                    <ul id="recent-searches"></ul>
+                </div>
+            </section>
+            <section id="current">
+                <div class="card">
+                    <h4 class="card-title">Current Weather <span class="name"></span></span></h4>
 
-        </div>
+                    <figure id="weather-figure">
+                        <img src=""/>
+                    </figure>
 
-    </section>
-    <section id="fiveday">
+                    <aside>
+                        <p class="card-text">Temp: <span class="tempSpan"></span></p>
+                        <!-- <p class="card-text">Min: <span id="minSpan"></span></p>
+                        <p class="card-text">Max: <span id="maxSpan"></span></p> -->
+                        <p class="card-text">Humidity: <span class="humidSpan"></span></p>
+                        <p class="card-text">UV Index: <span class="uvSpan"></span></p>
+                    </aside>
 
-    </section>
-</main>
+                </div>
 
-<script src="./script.js"></script>
+            </section>
+            <section id="fiveday">
 
-</body>
+            </section>
+        </main>
+
+        <script src="./script.js"></script>
+
+    </body>
+
 </html>
-
-
