@@ -1,167 +1,25 @@
+*{
+    box-sizing: border-box;
+
+}
+
 body {
-    background-color: royalblue;
-  }
-  header h1 {
-    margin: 1em auto;
-      color: #0f110c;
-      text-align: center;
-  }
-  #search {
-      background: lightsteelblue;
-      border: 1px solid rgba(0, 0, 0, .125);
-      border-radius: .25rem;
-      margin: 1rem 0;
-      padding: 1rem;
-  }
-  form {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      margin: 0 auto 1rem;
-      text-align: center;
-      width: 100%;
-  }
-  form h3 {
-      text-align: left;
-      width: 100%;
-  }
-  form input {
-      height: 2.3rem;
-      width: 70%;
-  }
-  #city-search-field {
-      width: 15em;
-  }
-  form #err {
-    display: none;
-    color: red;
-  }
-  form button {
-      width: 20%;
-      min-width: 5rem;
-      text-align: center;
-  }
-  .btn-primary {
-    background-color: #0f110c;
-   }
-  
-   img {
-       margin: 0 auto;
-       margin: 10px auto;
-       width: 100%;
-   }
-  
-   #weather-figure img, .daily-icon img {
-     background-color: skyblue;
-     border-radius: 20px;
-   }
-  
-   #recent p {
-     font-size: 1.5rem;
-     line-height: 1.5em;
-    margin-bottom: .5em;;
-  }
-  #recent-searches {
-      display: flex;
-      flex-flow: row wrap;
-      list-style: none;
-      margin: 0 auto;
-      padding: 0;
-  }
-  .recent-search {
-    display: block;
-    background-color: #fff;
-    cursor: pointer;
-    margin: .2em auto;
-    border: 1px solid grey;
-    border-radius: .25rem;
-    padding: .2em;
-    line-height: 1.5em;
-    text-align: center;
-    width: 45%;
-  }
-  #current .card {
-      align-items: center;
-      background: #FBFFE3;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-      padding: 1rem;
-      padding-bottom: 2rem;
-      width: 100%;
-  }
-  .card-title {
-      text-align: center;
-      width: 100%;
-  }
-  .card figure {
-      background: inherit;
-      margin: 0 auto;
-      width: 20%;
-  }
-  #weather-figure {
-      display: none;
-  }
-  .card aside {
-      display: flex;
-      flex-flow: column wrap;
-      margin: 0 auto;
-      justify-content: center;
-      width: 30%;
-  }
-  #fiveday {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-  }
-  .day-card {
-      background: azure;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 1rem 0;
-      padding: 0.25em;
-      width: 100%;
-  }
-  .day-card .date {
-      text-align: center;
-      width: 100%;
-  }
-  .day-card .daily-icon {
-      width: 40%;
-  }
-  .day-card .day-info {
-      width: 40%;
-  }
-  .day-card .card-text {
-      text-align: left;
-  }
-  @media (min-width: 768px) {
-      form {
-          width: 75%;
-      }
-      .recent-search {
-        width: 15%;
-      }
-      #fiveday {
-          justify-content: space-between;
-      }
-      .day-card {
-          width: 18%;
-      }
-      .day-card .daily-icon {
-          width: 75%;
-      }
-      .day-card .day-info {
-          width: 100%;
-      }
-      .day-card .card-text {
-          text-align: center;
-      }
-  }
-  @media (min-width: 1200px) {
-      form {
-          width : 50%;
-      }
-  }
+    background-color: ghostwhite;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h3{
+    font-weight: bold;
+}
+.forecast{
+
+    font-size: 0.9em;
+}
+span{
+    font-size: 1em;
+}
+li:hover{
+    background-color: lightsteelblue;
+    text-decoration: underline;
+}
